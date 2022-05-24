@@ -1,0 +1,30 @@
+.bigDiv{
+    width: 100%;
+    margin: auto;
+}
+
+
+.addTextDiv{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addTextDiv div{
+    margin-top: 30px;
+}
+
+
+.addPicDiv{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addPicDiv div{
+    margin-top: 30px;
+}
