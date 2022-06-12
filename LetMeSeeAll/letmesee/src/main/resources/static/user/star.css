@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.littleDiv{
+    margin: auto;
+    width: 600px;
+    border: 1px solid red;
+}
+

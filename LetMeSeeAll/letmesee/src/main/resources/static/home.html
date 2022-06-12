@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./homeCSS.css" rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">-->
+    <script src="./jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <title>LetMeSee</title>
+    <script src="./home.js"></script>
+</head>
+<body onload="init()" id="body">
+
+    <div class="headerDiv">
+        <div class="letmeseeDiv">LetMeSee</div>
+        <div class="twoDiv">
+            <input class="inputDiv" placeholder="input..." id="sText"/>
+            <button class="buttonDiv" id="go" onclick="search(0,0)">See</button>
+        </div>
+        <div>
+            <input class="fiDiv" placeholder="Filter words" id="fi"/>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="width: 140px;height: 30px;margin-left: 20px;margin-top: 23px;line-height: 10px;background-color: #ffffff;color: #6b6bb9" id="loginSignUp">
+            Login/SignUp
+        </button>
+
+    </div>
+
+    <div class="typeDiv">
+        <button onclick="changeType()" id="webt">Web</button>
+        <button onclick="changeType()" id="pict">Picture</button>
+    </div>
+
+    <div class="timeAndSumDiv">
+        本次搜索结果大约有 <span id="sum"></span> 条    |     本次搜索大约用时: <span id="sTime"></span> ms
+    </div>
+
+
+
+
+    <!-- login -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                </div>
+                <div class="modal-body" id="modal_body">
+                    <table style="border-spacing: 8px;border-collapse: separate">
+                        <tr>
+                            <td>username:</td>
+                            <td><input id="uname"/></td>
+                        </tr>
+                        <tr>
+                            <td>password:</td>
+                            <td><input type="password" id="pass" /></td>
+                        </tr>
+                    </table>
+<!--                    <button type="button" class="btn btn-default">+</button>-->
+<!--                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
+<!--                        Button with data-target-->
+<!--                    </button>-->
+<!--                    <div class="collapse" id="collapseExample">-->
+<!--                        -->
+<!--                        -->
+<!--                    </div>-->
+<!--                    <div class="well">-->
+<!--                        ...-->
+<!--                    </div>-->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="login">Login</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="reg">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myStarCollections">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" id="modal-content">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bigDiv">
+        <div class="leftDiv" id="big">
+        </div>
+        <div class="rightDiv">
+            <div class="btn-group-vertical" role="group" aria-label="..." id="rs">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
