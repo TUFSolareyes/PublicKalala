@@ -1,0 +1,4 @@
+简介
+本次开发的是青训营第二个项目--搜索引擎项目，项目要求是提供一个图形界面供用户进行文本存储和查询，然后支持一些简单的用户登录功能等。由于此次开发时间安排较紧，在一些细节和架构上有待提高，实现了基本的搜索引擎功能
+
+项目文档:https://bytedancecampus1.feishu.cn/docx/doxcnRHV5GT7na1ZfNVNsdnh14e?from=from_copylink
